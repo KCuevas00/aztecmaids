@@ -23,13 +23,13 @@
   --red-hover: #b8860b;
   --red-light: #fdf6e3;
   
-  --blue-primary: #0a2a5e;
-  --blue-hover: #08204a;
-  --blue-light: #eef3fb;
+  --blue-primary: #1d4ed8;
+  --blue-hover: #1e40af;
+  --blue-light: #eff6ff;
   
-  --green-primary: #4aa3e0;
-  --green-hover: #2f86c4;
-  --green-light: #eef7fd;
+  --green-primary: #16a34a;
+  --green-hover: #15803d;
+  --green-light: #f0fdf4;
   
   /* Layout & Spacing */
   --container-max: 1240px;
@@ -56,7 +56,7 @@ html {
   scroll-behavior: smooth;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
@@ -64,7 +64,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
   position: relative;
 }
@@ -188,7 +188,7 @@ h3 {
   background-color: var(--blue-hover);
   border-color: var(--blue-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(10, 42, 94, 0.3);
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.3);
 }
 
 .btn-outline {
@@ -276,9 +276,10 @@ h3 {
 .site-header {
   background-color: #ffffff;
   border-bottom: 1px solid var(--border-light);
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -474,9 +475,9 @@ h3 {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: rgba(74, 163, 224, 0.25);
-  color: #7cc4f0;
-  border: 1px solid rgba(124, 196, 240, 0.4);
+  background-color: rgba(22, 163, 74, 0.25);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -671,6 +672,10 @@ h3 {
 
 .service-card-footer .btn {
   width: 100%;
+}
+
+.services-mobile-cta {
+  display: none;
 }
 
 /* ==========================================================================
@@ -1544,6 +1549,26 @@ textarea {
     box-sizing: border-box;
   }
 
+  .service-card p {
+    margin-bottom: 0;
+  }
+
+  .service-card-footer {
+    display: none;
+  }
+
+  .services-mobile-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .services-mobile-cta .btn {
+    width: 100%;
+    max-width: 340px;
+  }
+
   .review-card {
     padding: 20px 16px;
     width: 100%;
@@ -1560,6 +1585,13 @@ textarea {
   }
   
   /* Mobile Navigation Spacing & Layout - Brand stretches smoothly without premature wrapping */
+  .site-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
   .nav-container {
     height: 72px;
     padding-left: 12px;
