@@ -1903,6 +1903,18 @@ textarea {
   .how-section, .faq-section, .areas-section { padding: 48px 0; }
   .steps-grid, .areas-grid { grid-template-columns: 1fr; gap: 20px; }
   .areas-map, .areas-map iframe { min-height: 260px; }
-  .mobile-sticky-inner { grid-template-columns: 1fr 1fr 1.5fr; gap: 8px; }
-  .mobile-sticky-inner .btn { padding: 8px 8px; font-size: 0.82rem; }
+  .mobile-sticky-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+  }
+  .mobile-sticky-inner .btn {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
