@@ -1325,6 +1325,16 @@ textarea {
   gap: 12px;
 }
 
+.footer-credit a {
+  color: #94a3b8;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.footer-credit a:hover {
+  color: #ffffff;
+}
+
 /* Mobile Sticky Bar */
 .mobile-sticky-bar {
   display: none;

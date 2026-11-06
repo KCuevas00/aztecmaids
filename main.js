@@ -27,7 +27,7 @@ const translations = {
       "svc4_title": "Cocinas",
       "svc4_desc": "Limpieza de superficies, tarjas y electrodomésticos por fuera y, según el paquete, también por dentro.",
       "svc5_title": "Baños",
-      "svc5_desc": "Desinfección total de regaderas, azulejos, inodoros, tarjas y cancelería.",
+      "svc5_desc": "Desinfección total de regaderas, azulejos, inodoros, lavamanos y cancelería.",
       "svc6_title": "Polvo, Aspirado y Pisos",
       "svc6_desc": "Desempolvado de muebles, molduras, repisas y marcos. Aspirado detallado de alfombras y trapeado y desinfección de pisos duros.",
       "why_title": "¿Por Qué Elegirnos?",
@@ -119,7 +119,7 @@ const translations = {
       "phone_label_1": "Teléfono principal",
       "phone_label_2": "Segundo teléfono",
       "btn_text_us": "Enviar Texto",
-      "btn_facebook": "Síguenos en Facebook",
+      "btn_facebook": "Síganos en Facebook",
       "sticky_text": "Texto",
       "lbl_freq": "Frecuencia",
       "opt_freq_ph": "Seleccione",
@@ -149,7 +149,8 @@ const translations = {
       "faq10_q": "¿En qué idioma se comunican?",
       "faq10_a": "Nuestros asistentes se encargan de la comunicación con el cliente para atender cualquier detalle. El equipo de limpieza se comunica en español.",
       "faq11_q": "¿Traen sus propios productos y equipo?",
-      "faq11_a": "[POR CONFIRMAR: escribir aquí la respuesta del dueño.]"
+      "faq11_a": "[POR CONFIRMAR: escribir aquí la respuesta del dueño.]",
+      "footer_credit": "Sitio web hecho por <a href=\"https://kevincuevas.com\" target=\"_blank\" rel=\"noopener noreferrer\">Kevin Cuevas</a>"
   },
   en: {
       "top_rating": "Monday &ndash; Friday: 8:00 AM &ndash; 6:00 PM",
@@ -299,7 +300,8 @@ const translations = {
       "faq10_q": "What language do you communicate in?",
       "faq10_a": "Our assistants handle communication with clients to take care of any detail. The cleaning team communicates in Spanish.",
       "faq11_q": "Do you bring your own supplies and equipment?",
-      "faq11_a": "[TO CONFIRM: write the owner's answer here.]"
+      "faq11_a": "[TO CONFIRM: write the owner's answer here.]",
+      "footer_credit": "Website made by <a href=\"https://kevincuevas.com\" target=\"_blank\" rel=\"noopener noreferrer\">Kevin Cuevas</a>"
   }
 };
 
