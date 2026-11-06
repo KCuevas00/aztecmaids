@@ -1,345 +1,305 @@
-// Aztec Maids Service LLC - Client Interaction & Bilingual Engine
-// Supporting English & Spanish with Natural Spanish as Default
+// Aztec Maids Service LLC - Core Client Interaction & Bilingual Engine (Natural Spanish Default)
 
 const translations = {
   es: {
-    // Top Bar
-    top_rating: "5.0 en Reseñas de Google",
-    top_location: "Atendiendo <strong>Chicago, Evanston, Highland Park y Glenview</strong>",
-    top_hours: "Lun &ndash; Vie: 8:00 AM &ndash; 6:00 PM",
-    
-    // Header & Nav
-    brand_tag: "Limpieza Residencial y Departamentos",
-    nav_home: "Inicio",
-    nav_services: "Servicios",
-    nav_included: "¿Qué Incluye?",
-    nav_why_us: "¿Por Qué Nosotros?",
-    nav_gallery: "Galería",
-    nav_reviews: "Reseñas",
-    nav_contact: "Contacto",
-    btn_request_estimate: "Estimado Gratis",
-    
-    // Hero Section
-    hero_title: "Limpieza Profesional de <span class=\"gold-text\">Casas y Departamentos</span> en Chicago",
-    hero_lead: "Servicio confiable y detallado de limpieza regular, profunda y de mudanza. Cuidamos cada rincón de su hogar con dedicación, puntualidad y excelencia.",
-    hero_feat_1: "Negocio Local de Confianza",
-    hero_feat_2: "Casas y Departamentos",
-    hero_feat_3: "Estimados Gratis sin Compromiso",
-    hero_slide1_cap: "Aspirado profesional y detallado de alfombras",
-    hero_slide2_cap: "Recámaras ordenadas e impecables",
-    hero_slide3_cap: "Estilizado de camas y desempolvado profundo",
-    hero_slide4_cap: "Pisos de madera relucientes y pulidos",
-
-    // Services Section
-    services_title: "Nuestros Servicios de Limpieza",
-    services_lead: "Planes a la medida para mantener su casa o departamento siempre reluciente, saludable y acogedor.",
-    svc1_title: "Limpieza Regular",
-    svc1_desc: "Mantenimiento periódico semanal, quincenal o mensual. Mantenemos su hogar impecable, fresco y organizado sin que tenga que preocuparse.",
-    svc2_title: "Limpieza Profunda",
-    svc2_desc: "Limpieza exhaustiva de arriba a abajo: zócalos, molduras, desengrasado a fondo en cocina, sarro en azulejos y esquinas difíciles.",
-    svc3_title: "Limpieza de Mudanza",
-    svc3_desc: "Servicio Move-In / Move-Out para departamentos o casas vacías. Dejamos la propiedad lista para nuevos inquilinos o entrega de depósito.",
-    svc4_title: "Cocinas Impecables",
-    svc4_desc: "Desinfección de superficies, estufa, campana, microondas, exteriores de gabinetes, tarjas y grifería brillante.",
-    svc5_title: "Baños Relucientes",
-    svc5_desc: "Desinfección profunda de inodoros, tinas, regaderas, canceles de vidrio, eliminación de sarro, azulejos y espejos sin marcas.",
-    svc6_title: "Pisos, Polvo y Aspirado",
-    svc6_desc: "Aspirado minucioso de alfombras con líneas limpias, desempolvado de muebles y molduras, y trapeado abrillantador de pisos duros.",
-
-    // What's Included Checklist
-    inc_title: "¿Qué Incluyen Nuestras Limpiezas?",
-    inc_lead: "Cada visita cubre los puntos clave de su hogar con productos de alta calidad y máxima atención al detalle.",
-    inc_kitchen: "Cocinas",
-    inc_k1: "Estufa, quemadores y campana exterior",
-    inc_k2: "Microondas por dentro y por fuera",
-    inc_k3: "Tarjas, grifería y mesadas desinfectadas",
-    inc_k4: "Frentes de gabinetes y electrodomésticos",
-    inc_bath: "Baños",
-    inc_b1: "Desinfección completa de inodoro",
-    inc_b2: "Tinas, regaderas y canceles de vidrio",
-    inc_b3: "Azulejos libres de sarro y hongos",
-    inc_b4: "Espejos relucientes y grifos pulidos",
-    inc_dust: "Desempolvado",
-    inc_d1: "Molduras, zócalos y marcos de cuadros",
-    inc_d2: "Mesas de centro, noche y escritorios",
-    inc_d3: "Persianas, alféizares y repisas",
-    inc_d4: "Lámparas accesibles y adornos",
-    inc_floors: "Pisos y Alfombras",
-    inc_f1: "Aspirado con líneas marcadas y prolijas",
-    inc_f2: "Aspirado bajo camas y muebles ligeros",
-    inc_f3: "Trapeado húmedo desinfectante",
-    inc_f4: "Abrillantado de pisos de madera y loseta",
-
-    // Why Choose Us
-    why_title: "¿Por Qué Elegir Aztec Maids?",
-    why_lead: "Honestidad, meticulosidad y trato directo para que disfrute de un hogar impecable con total tranquilidad.",
-    why_item1_title: "Personal Honesto y Confiable",
-    why_item1_desc: "Tratamos su casa y pertenencias con el máximo respeto y discreción. Seguridad garantizada.",
-    why_item2_title: "Detallistas en Cada Esquina",
-    why_item2_desc: "No solo limpiamos lo que se ve a simple vista; cuidamos molduras, bajo los muebles y esquinas.",
-    why_item3_title: "Puntualidad y Flexibilidad",
-    why_item3_desc: "Llegamos a la hora acordada y nos adaptamos a su horario, ya sea servicio recurrente o puntual.",
-    why_item4_title: "Precios Claros y Estimados Gratis",
-    why_item4_desc: "Cotizaciones transparentes basadas en el tamaño de su espacio y necesidades reales, sin costos ocultos.",
-    stat_satisfaction: "Satisfacción",
-    stat_rating: "en Google",
-    stat_free: "Gratis",
-    stat_estimates: "Estimados",
-
-    // Areas
-    areas_title: "Zonas de Servicio en Illinois",
-    area_chicago: "Chicago",
-    area_evanston: "Evanston",
-    area_highland_park: "Highland Park",
-    area_glenview: "Glenview",
-
-    // Reviews
-    reviews_badge: "Reseñas en Google",
-    reviews_title: "Opiniones de Nuestros Clientes",
-    reviews_lead: "Clientes satisfechos en Chicago y suburbios que confían el cuidado de sus hogares a Aztec Maids.",
-    rev1_text: "\"Increíble trabajo con la limpieza profunda de nuestra casa en Highland Park. Los pisos de madera quedaron brillantes y las alfombras como nuevas. Muy recomendados.\"",
-    rev1_author: "Sofia M. &bull; Highland Park, IL",
-    rev2_text: "\"Contratamos a Aztec Maids para la limpieza de entrega (move-out) de nuestro departamento en Chicago y nos regresaron el 100% del depósito. Fueron muy puntuales y amables.\"",
-    rev2_author: "Roberto G. &bull; Chicago, IL",
-    rev3_text: "\"Tienen servicio quincenal en mi casa en Evanston y no los cambio por nada. Los baños y la cocina quedan rechinando de limpios. Son de total confianza.\"",
-    rev3_author: "Emily K. &bull; Evanston, IL",
-
-    // Estimate Form
-    est_title: "Solicite su Estimado Gratis",
-    est_lead: "Llene el formulario o llámenos directamente. Le responderemos de inmediato para cotizar la limpieza de su casa o departamento.",
-    lbl_name: "Su Nombre *",
-    lbl_phone: "Número de Teléfono *",
-    lbl_city: "Ciudad o Vecindario *",
-    lbl_service: "Tipo de Servicio *",
-    lbl_property: "Tipo de Propiedad",
-    lbl_details: "Detalles o Habitaciones",
-    ph_name: "ej. María Rodríguez",
-    ph_phone: "(224) 000-0000",
-    ph_city: "ej. Chicago, Evanston, Glenview...",
-    ph_details: "Indíquenos cuántas recámaras y baños tiene su propiedad, o si requiere atención especial...",
-    opt_service_placeholder: "Seleccione un servicio",
-    opt_regular: "Limpieza Regular (Semanal / Quincenal)",
-    opt_deep: "Limpieza Profunda",
-    opt_move: "Limpieza de Mudanza (Move-In / Out)",
-    opt_kitchen_bath: "Solo Cocina y Baños",
-    opt_floors: "Cuidado de Pisos y Aspirado",
-    opt_other: "Otro Servicio / Consulta Personalizada",
-    opt_prop_placeholder: "Seleccione propiedad",
-    opt_house: "Casa Unifamiliar",
-    opt_apartment: "Departamento / Condominio",
-    opt_townhouse: "Townhouse",
-    opt_commercial: "Oficina / Pequeño Comercio",
-    btn_submit_request: "Enviar para Estimado Gratis",
-    form_note: "Sin compromiso. Sus datos son confidenciales.",
-
-    // Call Box
-    callbox_title: "¿Desea Atención Inmediata?",
-    callbox_lead: "Llámenos directamente a cualquiera de nuestras dos líneas telefónicas para cotizar al momento o agendar su cita.",
-    phone_primary_label: "Línea Principal",
-    phone_secondary_label: "Línea Secundaria",
-    callbox_hours_title: "Horario de Servicio",
-    callbox_hours_week: "Lunes a Viernes: 8:00 AM &ndash; 6:00 PM",
-    callbox_hours_weekend: "Sábado y Domingo: Con cita previa",
-    callbox_email_title: "Correo Electrónico",
-    callbox_social_title: "Síganos en Facebook",
-
-    // Footer
-    footer_desc: "Aztec Maids Service LLC: Servicios profesionales de limpieza residencial y de departamentos en Chicago, Evanston, Highland Park, Glenview y áreas vecinas.",
-    footer_services_title: "Servicios",
-    footer_nav_title: "Navegación",
-    footer_contact_title: "Contacto",
-    footer_hours: "Lun &ndash; Vie: 8:00 AM &ndash; 6:00 PM",
-    footer_copyright: "&copy; 2026 Aztec Maids Service LLC. Todos los derechos reservados.",
-    footer_serving: "Atendiendo con orgullo Chicago, Evanston, Highland Park, Glenview y el North Shore.",
-
-    // Mobile Sticky Bar
-    sticky_call: "Llamar",
-    sticky_estimate: "Estimado Gratis",
-
-    // Gallery Page
-    gallery_title: "Galería de Trabajos Realizados",
-    gallery_lead: "Fotos reales de nuestros trabajos de limpieza en residencias y departamentos.",
-    gallery_item1: "Aspirado de sala con líneas impecables",
-    gallery_item2: "Recámara ordenada y alfombra recién aspirada",
-    gallery_item3: "Habitación principal estilizada y limpia",
-    gallery_item4: "Pisos de madera abrillantados y libres de polvo",
-
-    // Form Messages
-    msg_submitting: "Enviando solicitud...",
-    msg_success_title: "¡Solicitud Recibida con Éxito!",
-    msg_success_desc: "¡Gracias! El equipo de Aztec Maids revisará los detalles y le llamará muy pronto para darle su estimado.",
-    msg_need_call: "¿Prefiere llamar ahora mismo? Marque al",
-    msg_error_call: "Hubo un error al enviar. Por favor llame al (224) 252-8034 o (224) 305-2897."
+      "top_rating": "Lunes a Viernes: 8:00 AM &ndash; 6:00 PM",
+      "top_location": "Chicago, IL &bull; Atendiendo Chicago y North Shore",
+      "brand_tag": "Limpieza de Casas y Departamentos",
+      "nav_home": "Inicio",
+      "nav_services": "Servicios",
+      "nav_why_us": "¿Por Qué Nosotros?",
+      "nav_gallery": "Galería",
+      "nav_contact": "Contacto",
+      "btn_request_estimate": "Estimado Gratis",
+      "hero_title": "Limpieza Profesional de Casas y Departamentos en Chicago",
+      "hero_lead": "Limpieza regular, limpieza profunda y limpieza de mudanza para su hogar. Trabajo detallado, puntual y estimados gratis.",
+      "hero_feat_1": "3 Años de Experiencia",
+      "hero_feat_2": "Casas y Departamentos",
+      "hero_feat_3": "Estimados Gratis",
+      "services_title": "Servicios",
+      "services_lead": "Limpieza residencial a su medida en Chicago y los suburbios del norte.",
+      "svc1_title": "Limpieza Regular",
+      "svc1_desc": "Limpieza semanal, quincenal o mensual para mantener su casa o departamento limpio, ordenado y cómodo todo el tiempo.",
+      "svc2_title": "Limpieza Profunda",
+      "svc2_desc": "Limpieza exhaustiva de arriba a abajo. Llegamos a los rincones que la limpieza regular no alcanza.",
+      "svc3_title": "Limpieza de Mudanza",
+      "svc3_desc": "Dejamos la propiedad lista para entregar o para estrenar, con limpieza completa al mudarse o al salir (Move-In / Move-Out).",
+      "svc4_title": "Cocinas",
+      "svc4_desc": "Limpieza de superficies, tarjas y electrodomésticos por fuera y, según el paquete, también por dentro.",
+      "svc5_title": "Baños",
+      "svc5_desc": "Desinfección total de regaderas, azulejos, inodoros, tarjas y cancelería.",
+      "svc6_title": "Polvo, Aspirado y Pisos",
+      "svc6_desc": "Desempolvado de muebles, molduras, repisas y marcos. Aspirado detallado de alfombras y trapeado y desinfección de pisos duros.",
+      "why_title": "¿Por Qué Elegirnos?",
+      "why_lead": "Limpieza bien hecha, trato directo y precios claros, sin presiones.",
+      "why_item1_title": "Negocio Local",
+      "why_item1_desc": "Con base en Chicago, atendiendo a familias de Chicago, Evanston, Highland Park, Glenview y alrededores.",
+      "why_item2_title": "Equipo de 2 Personas",
+      "why_item2_desc": "Enviamos un equipo de 2 personas a cada limpieza. Cocinas, baños, polvo, aspirado y pisos: revisamos cada área para que todo quede impecable.",
+      "why_item3_title": "Estimados Claros",
+      "why_item3_desc": "Le damos su estimado con precios claros desde el principio, sin sorpresas ni cobros extras inesperados.",
+      "why_item4_title": "Servicio a su Medida",
+      "why_item4_desc": "Elija limpieza regular, profunda o de mudanza, según lo que necesite su hogar.",
+      "stat_experience": "Años de Experiencia",
+      "stat_rating": "Personas por Limpieza",
+      "stat_free": "Gratis",
+      "stat_estimates": "Estimados",
+      "trust_residential": "Casas y Departamentos",
+      "trust_gutters": "Cocinas, Baños, Polvo y Pisos",
+      "trust_repairs": "Limpieza Regular, Profunda y de Mudanza",
+      "trust_rated": "Atención de Lunes a Viernes",
+      "est_title": "Pida su Estimado Gratis",
+      "est_lead": "Llene este formulario y nos comunicamos con usted rápido para darle su estimado sin costo.",
+      "lbl_name": "Su Nombre *",
+      "lbl_phone": "Número de Teléfono *",
+      "lbl_city": "Ciudad o Dirección",
+      "lbl_service": "Servicio que necesita *",
+      "lbl_details": "Detalles del servicio",
+      "ph_name": "Juan Pérez",
+      "ph_phone": "(224) 000-0000",
+      "ph_city": "ej. Chicago, IL",
+      "ph_details": "Cuéntenos qué necesita, cuántos cuartos y baños tiene su casa o departamento, o cuándo le gustaría empezar...",
+      "opt_service_placeholder": "Seleccione un servicio",
+      "opt_regular": "Limpieza Regular",
+      "opt_deep": "Limpieza Profunda",
+      "opt_move": "Limpieza de Mudanza",
+      "opt_multiple": "Varios Servicios / No Estoy Seguro",
+      "btn_submit_request": "Enviar para Estimado Gratis",
+      "form_note": "Sin compromiso. No compartimos su número ni su información.",
+      "callbox_title": "¿Prefiere Llamar Directamente?",
+      "callbox_lead": "Llámenos con confianza para resolver sus dudas o agendar su estimado de una vez.",
+      "callbox_hours_title": "Horario de Atención",
+      "callbox_hours_week": "Lunes a Viernes: 8:00 AM &ndash; 6:00 PM",
+      "callbox_hours_sun": "Sábado y Domingo: Cerrado",
+      "callbox_areas_title": "Áreas de Cobertura",
+      "callbox_areas_desc": "Con base en Chicago, IL &bull; Trabajamos en Chicago, Evanston, Highland Park, Glenview y áreas circundantes de North Shore y Chicagoland.",
+      "footer_desc": "Limpieza profesional de casas y departamentos en Chicago y los suburbios del norte. Limpieza regular, profunda y de mudanza.",
+      "footer_services_title": "Servicios",
+      "footer_nav_title": "Navegación",
+      "footer_contact_title": "Contacto",
+      "footer_hours": "Lun &ndash; Vie: 8:00 AM &ndash; 6:00 PM",
+      "footer_copyright": "&copy; 2026 Aztec Maids Service LLC. Todos los derechos reservados.",
+      "footer_serving": "Con base en Chicago &bull; Sirviendo a Chicago, Evanston, Highland Park, Glenview y North Shore",
+      "footer_area": "Chicago, IL y North Shore",
+      "sticky_call": "Llamar",
+      "sticky_estimate": "Estimado Gratis",
+      "gallery_title": "Galería de Trabajos",
+      "msg_submitting": "Enviando solicitud...",
+      "msg_success_title": "¡Solicitud Recibida!",
+      "msg_success_desc": "¡Gracias! Revisaremos los detalles y le llamaremos pronto para darle su estimado gratis.",
+      "msg_need_call": "¿Prefiere llamar ahora? Marque al",
+      "msg_error_call": "Hubo un error al enviar. Por favor llame directamente al (224) 252-8034.",
+      "nav_areas": "Áreas",
+      "hero_feat_4": "Lunes a Viernes: 8 AM &ndash; 6 PM",
+      "how_title": "Así Funciona",
+      "how_lead": "Tres pasos sencillos para tener su hogar limpio.",
+      "how1_title": "Contáctenos",
+      "how1_desc": "Llámenos, envíenos un texto o llene el formulario con los datos de su casa o departamento.",
+      "how2_title": "Reciba su Estimado",
+      "how2_desc": "Revisamos los detalles y le damos su estimado gratis, con precio claro desde el principio.",
+      "how3_title": "Agendamos su Limpieza",
+      "how3_desc": "Escogemos juntos el día y la hora que más le convenga, de lunes a viernes.",
+      "areas_title": "Áreas de Cobertura",
+      "areas_lead": "Atendemos Chicago y los suburbios del norte.",
+      "areas_more": "Y áreas circundantes de North Shore y Chicagoland.",
+      "areas_note": "¿No ve su ciudad? Llámenos y con gusto le confirmamos si llegamos a su área.",
+      "faq_title": "Preguntas Frecuentes",
+      "faq_lead": "Respuestas rápidas a las dudas más comunes.",
+      "lbl_beds": "Recámaras",
+      "lbl_baths": "Baños",
+      "lbl_contact": "¿Cómo prefiere que le contactemos?",
+      "opt_beds_ph": "Seleccione",
+      "opt_studio": "Estudio",
+      "opt_5plus": "5 o más",
+      "opt_baths_ph": "Seleccione",
+      "opt_4plus": "4 o más",
+      "opt_contact_ph": "Seleccione",
+      "opt_contact_call": "Llamada",
+      "opt_contact_text": "Mensaje de texto",
+      "phone_label_1": "Teléfono principal",
+      "phone_label_2": "Segundo teléfono",
+      "btn_text_us": "Enviar Texto",
+      "btn_facebook": "Síguenos en Facebook",
+      "sticky_text": "Texto",
+      "lbl_freq": "Frecuencia",
+      "opt_freq_ph": "Seleccione",
+      "opt_freq_once": "Una sola vez",
+      "opt_freq_weekly": "Semanal",
+      "opt_freq_biweekly": "Quincenal",
+      "opt_freq_monthly": "Mensual",
+      "opt_freq_unsure": "No estoy seguro",
+      "faq1_q": "¿Cuánto cuesta una limpieza?",
+      "faq1_a": "El precio depende del tamaño de su casa o departamento y del tipo de limpieza. Pida su estimado gratis por teléfono, texto o con el formulario y le damos un precio claro desde el principio.",
+      "faq2_q": "¿Qué incluye la limpieza?",
+      "faq2_a": "Cocinas, baños, desempolvado, aspirado y pisos. En las cocinas limpiamos los electrodomésticos por fuera y, según el paquete, también por dentro.",
+      "faq3_q": "¿Cuál es la diferencia entre limpieza regular y profunda?",
+      "faq3_a": "La limpieza regular mantiene su hogar limpio de forma periódica. La profunda es más exhaustiva, de arriba a abajo, y llega a los rincones que la regular no alcanza.",
+      "faq4_q": "¿Cada cuánto pueden limpiar mi casa?",
+      "faq4_a": "Nos adaptamos a sus necesidades. Ofrecemos servicios puntuales (una sola vez), semanales, quincenales o mensuales.",
+      "faq5_q": "¿Cuánta experiencia tienen y cuántas personas van a mi casa?",
+      "faq5_a": "Contamos con 3 años de experiencia en el área. Para que el servicio sea eficiente, asignamos un equipo de 2 personas por cada limpieza.",
+      "faq6_q": "¿Necesito estar en casa durante la limpieza?",
+      "faq6_a": "No es obligatorio que esté en casa durante el servicio. Si prefiere estar presente, no hay ningún problema.",
+      "faq7_q": "¿Pueden limpiar si tengo mascotas?",
+      "faq7_a": "Sí, podemos trabajar con mascotas en casa siempre y cuando no sean peligrosas o estén bajo la supervisión de sus dueños.",
+      "faq8_q": "¿Qué formas de pago aceptan?",
+      "faq8_a": "Aceptamos pagos por Zelle o en efectivo.",
+      "faq9_q": "¿Cuál es su política de cancelación?",
+      "faq9_a": "Entendemos que los imprevistos ocurren. Si necesita cancelar o reprogramar, avísenos con al menos 24 horas de anticipación y no tiene ningún costo. Las cancelaciones fuera de ese plazo tienen un cargo de $50.",
+      "faq10_q": "¿En qué idioma se comunican?",
+      "faq10_a": "Nuestros asistentes se encargan de la comunicación con el cliente para atender cualquier detalle. El equipo de limpieza se comunica en español.",
+      "faq11_q": "¿Traen sus propios productos y equipo?",
+      "faq11_a": "[POR CONFIRMAR: escribir aquí la respuesta del dueño.]"
   },
-
   en: {
-    // Top Bar
-    top_rating: "5.0 Google Reviews",
-    top_location: "Serving <strong>Chicago, Evanston, Highland Park &amp; Glenview</strong>",
-    top_hours: "Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM",
-    
-    // Header & Nav
-    brand_tag: "House &amp; Apartment Cleaning",
-    nav_home: "Home",
-    nav_services: "Services",
-    nav_included: "What's Included",
-    nav_why_us: "Why Choose Us",
-    nav_gallery: "Gallery",
-    nav_reviews: "Reviews",
-    nav_contact: "Contact",
-    btn_request_estimate: "Free Estimate",
-    
-    // Hero Section
-    hero_title: "Professional <span class=\"gold-text\">House &amp; Apartment Cleaning</span> in Chicago",
-    hero_lead: "Dependable, thorough regular, deep, and move-in/out cleaning services. We treat every corner of your home with meticulous care, punctuality, and pride.",
-    hero_feat_1: "Trusted Local Family Service",
-    hero_feat_2: "Houses &amp; Apartments",
-    hero_feat_3: "Free, No-Obligation Estimates",
-    hero_slide1_cap: "Crisp vacuum lines & thorough carpet grooming",
-    hero_slide2_cap: "Spotless, neatly organized bedrooms",
-    hero_slide3_cap: "Master bedroom bed styling & thorough dusting",
-    hero_slide4_cap: "Gleaming hardwood floor polishing & shine",
-
-    // Services Section
-    services_title: "Our Professional Cleaning Services",
-    services_lead: "Customized cleaning plans to keep your home or apartment consistently sparkling, sanitized, and welcoming.",
-    svc1_title: "Regular Cleaning",
-    svc1_desc: "Routine weekly, bi-weekly, or monthly visits. We keep your living spaces fresh, sanitized, and tidy so you can enjoy your free time.",
-    svc2_title: "Deep Cleaning",
-    svc2_desc: "Exhaustive top-to-bottom clean: baseboards, detailed dusting, heavy kitchen degreasing, bathroom descaling, and hard-to-reach spots.",
-    svc3_title: "Move-In & Move-Out Cleaning",
-    svc3_desc: "Complete turnover cleaning for empty apartments and houses. Ready for new tenants, walkthrough inspections, and 100% deposit returns.",
-    svc4_title: "Kitchen Detailing",
-    svc4_desc: "Complete stove top cleaning, range hood exterior, microwave inside and out, sinks, countertops, backsplash, and cabinet facings.",
-    svc5_title: "Bathroom Sanitization",
-    svc5_desc: "Complete toilet sanitization, shower stalls, tubs, glass doors, soap scum removal, tile scrubbing, and streak-free mirror polishing.",
-    svc6_title: "Floors, Dusting & Vacuuming",
-    svc6_desc: "Meticulous vacuuming with signature carpet groom lines, detailed surface dusting, and damp mopping for shining hard floors.",
-
-    // What's Included Checklist
-    inc_title: "What's Included in Every Cleaning?",
-    inc_lead: "Every visit covers the critical areas of your home using high-grade supplies and sharp attention to detail.",
-    inc_kitchen: "Kitchens",
-    inc_k1: "Stovetop, burners, and range hood exterior",
-    inc_k2: "Microwave sanitized inside and out",
-    inc_k3: "Sinks, chrome fixtures, and sanitized counters",
-    inc_k4: "Wiped down appliance and cabinet faces",
-    inc_bath: "Bathrooms",
-    inc_b1: "Complete toilet disinfection & scrub",
-    inc_b2: "Tubs, shower walls, and glass doors",
-    inc_b3: "Tile descaling and soap scum elimination",
-    inc_b4: "Polished chrome fixtures and streak-free mirrors",
-    inc_dust: "Dusting",
-    inc_d1: "Baseboards, molding, and picture frames",
-    inc_d2: "Coffee tables, nightstands, and desks",
-    inc_d3: "Window sills, blinds, and open shelves",
-    inc_d4: "Lamps, knick-knacks, and accessible light fixtures",
-    inc_floors: "Floors & Carpets",
-    inc_f1: "Deep vacuuming with sharp grooming lines",
-    inc_f2: "Vacuuming under accessible beds and furniture",
-    inc_f3: "Sanitizing damp mop on all hard floors",
-    inc_f4: "Hardwood and tile polishing for maximum shine",
-
-    // Why Choose Us
-    why_title: "Why Choose Aztec Maids?",
-    why_lead: "Trust, integrity, and direct personalized communication for a spotless home and total peace of mind.",
-    why_item1_title: "Honest, Vetted & Reliable",
-    why_item1_desc: "We treat your home, pets, and personal belongings with the utmost respect, discretion, and care.",
-    why_item2_title: "Meticulous Eye for Detail",
-    why_item2_desc: "We don't just skim the surface; we wipe baseboards, clean under furniture, and sanitize edges.",
-    why_item3_title: "Punctual & Accommodating",
-    why_item3_desc: "We arrive on schedule and adapt around your family's routine, whether for recurring or one-time cleanings.",
-    why_item4_title: "Clear Pricing & Free Quotes",
-    why_item4_desc: "Honest, upfront pricing tailored to your square footage and needs without hidden fees or contracts.",
-    stat_satisfaction: "Satisfaction",
-    stat_rating: "Google Rating",
-    stat_free: "Free",
-    stat_estimates: "Estimates",
-
-    // Areas
-    areas_title: "Service Areas Across Illinois",
-    area_chicago: "Chicago",
-    area_evanston: "Evanston",
-    area_highland_park: "Highland Park",
-    area_glenview: "Glenview",
-
-    // Reviews
-    reviews_badge: "Google Reviews",
-    reviews_title: "What Our Clients Say",
-    reviews_lead: "Real feedback from homeowners and tenants across Chicago and the North Shore.",
-    rev1_text: "\"Incredible deep cleaning of our home in Highland Park. The hardwood floors were gleaming and the carpets looked brand new. Highly recommend Aztec Maids!\"",
-    rev1_author: "Sofia M. &bull; Highland Park, IL",
-    rev2_text: "\"We booked Aztec Maids for our apartment move-out cleaning in Chicago and got our full deposit back without any hassle. Extremely prompt and professional.\"",
-    rev2_author: "Roberto G. &bull; Chicago, IL",
-    rev3_text: "\"They clean my home in Evanston bi-weekly and I couldn't be happier. The kitchen and bathrooms are always pristine. Truly trustworthy.\"",
-    rev3_author: "Emily K. &bull; Evanston, IL",
-
-    // Estimate Form
-    est_title: "Request Your Free Estimate",
-    est_lead: "Fill out the quick form or call us directly. We respond promptly to quote your house or apartment cleaning.",
-    lbl_name: "Your Name *",
-    lbl_phone: "Phone Number *",
-    lbl_city: "City or Neighborhood *",
-    lbl_service: "Service Needed *",
-    lbl_property: "Property Type",
-    lbl_details: "Rooms & Details",
-    ph_name: "e.g. Mary Smith",
-    ph_phone: "(224) 000-0000",
-    ph_city: "e.g. Chicago, Evanston, Glenview...",
-    ph_details: "Let us know bedrooms/bathrooms count, specific requirements, or preferred dates...",
-    opt_service_placeholder: "Select a service",
-    opt_regular: "Regular Cleaning (Weekly / Bi-Weekly)",
-    opt_deep: "Deep Cleaning",
-    opt_move: "Move-In / Move-Out Cleaning",
-    opt_kitchen_bath: "Kitchen & Bathrooms Focus",
-    opt_floors: "Floor Care & Deep Vacuuming",
-    opt_other: "Other Service / Custom Inquiry",
-    opt_prop_placeholder: "Select property type",
-    opt_house: "Single Family House",
-    opt_apartment: "Apartment / Condo",
-    opt_townhouse: "Townhouse",
-    opt_commercial: "Office / Small Business",
-    btn_submit_request: "Submit for Free Estimate",
-    form_note: "No obligation. Your information is kept completely private.",
-
-    // Call Box
-    callbox_title: "Prefer Immediate Assistance?",
-    callbox_lead: "Call either of our direct telephone lines for quick scheduling or an on-the-spot estimate.",
-    phone_primary_label: "Primary Line",
-    phone_secondary_label: "Secondary Line",
-    callbox_hours_title: "Business Hours",
-    callbox_hours_week: "Monday &ndash; Friday: 8:00 AM &ndash; 6:00 PM",
-    callbox_hours_weekend: "Saturday &amp; Sunday: By appointment",
-    callbox_email_title: "Email Address",
-    callbox_social_title: "Follow Us on Facebook",
-
-    // Footer
-    footer_desc: "Aztec Maids Service LLC: Premier residential and apartment cleaning throughout Chicago, Evanston, Highland Park, Glenview, and surrounding communities.",
-    footer_services_title: "Services",
-    footer_nav_title: "Navigation",
-    footer_contact_title: "Contact",
-    footer_hours: "Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM",
-    footer_copyright: "&copy; 2026 Aztec Maids Service LLC. All rights reserved.",
-    footer_serving: "Proudly serving Chicago, Evanston, Highland Park, Glenview &amp; the North Shore.",
-
-    // Mobile Sticky Bar
-    sticky_call: "Call Us",
-    sticky_estimate: "Free Estimate",
-
-    // Gallery Page
-    gallery_title: "Our Work Gallery",
-    gallery_lead: "Real photos from our residential and apartment cleaning projects.",
-    gallery_item1: "Living room vacuuming with pristine groom lines",
-    gallery_item2: "Spotless bedroom and freshly groomed carpet",
-    gallery_item3: "Master bedroom bed styling and detailed dusting",
-    gallery_item4: "Polished hardwood floors with rich shine",
-
-    // Form Messages
-    msg_submitting: "Submitting request...",
-    msg_success_title: "Estimate Request Received!",
-    msg_success_desc: "Thank you! The Aztec Maids team will review your details and call you shortly to discuss your custom estimate.",
-    msg_need_call: "Need to speak with us right away? Call",
-    msg_error_call: "Submission error. Please call (224) 252-8034 or (224) 305-2897 directly."
+      "top_rating": "Monday &ndash; Friday: 8:00 AM &ndash; 6:00 PM",
+      "top_location": "Based in Chicago, IL &bull; Serving Chicago &amp; the North Shore",
+      "brand_tag": "Home &amp; Apartment Cleaning",
+      "nav_home": "Home",
+      "nav_services": "Services",
+      "nav_why_us": "Why Choose Us",
+      "nav_gallery": "Gallery",
+      "nav_contact": "Contact",
+      "btn_request_estimate": "Free Estimate",
+      "hero_title": "Professional Home &amp; Apartment Cleaning in Chicago",
+      "hero_lead": "Regular cleaning, deep cleaning, and move-in / move-out cleaning for your home. Detailed, reliable work and free estimates.",
+      "hero_feat_1": "3 Years of Experience",
+      "hero_feat_2": "Homes &amp; Apartments",
+      "hero_feat_3": "Free Estimates",
+      "services_title": "Services",
+      "services_lead": "Residential cleaning tailored to you in Chicago and the northern suburbs.",
+      "svc1_title": "Regular Cleaning",
+      "svc1_desc": "Weekly, biweekly, or monthly cleaning to keep your home or apartment tidy, fresh, and comfortable all the time.",
+      "svc2_title": "Deep Cleaning",
+      "svc2_desc": "Thorough top-to-bottom cleaning. We reach the corners that regular cleaning doesn't.",
+      "svc3_title": "Move-In / Move-Out Cleaning",
+      "svc3_desc": "We leave the property ready to hand over or move into, with a complete clean when you arrive or leave.",
+      "svc4_title": "Kitchens",
+      "svc4_desc": "Cleaning of surfaces, sinks, and appliances on the outside and, depending on the package, the inside too.",
+      "svc5_title": "Bathrooms",
+      "svc5_desc": "Full disinfection of showers, tile, toilets, sinks, and glass doors.",
+      "svc6_title": "Dusting, Vacuuming &amp; Floors",
+      "svc6_desc": "Dusting of furniture, moldings, shelves, and frames. Detailed vacuuming of carpets and rugs, plus mopping and disinfecting hard floors.",
+      "why_title": "Why Choose Us",
+      "why_lead": "Cleaning done right, with straightforward service and clear pricing, no pressure.",
+      "why_item1_title": "Local Business",
+      "why_item1_desc": "Based in Chicago, serving families in Chicago, Evanston, Highland Park, Glenview, and surrounding areas.",
+      "why_item2_title": "A Team of 2",
+      "why_item2_desc": "We send a team of 2 people to every cleaning. Kitchens, bathrooms, dusting, vacuuming, and floors: we check every area so everything is spotless.",
+      "why_item3_title": "Clear Estimates",
+      "why_item3_desc": "You get your estimate with clear pricing from the start, with no surprises or unexpected extra charges.",
+      "why_item4_title": "Service Made for You",
+      "why_item4_desc": "Choose regular, deep, or move-in / move-out cleaning, depending on what your home needs.",
+      "stat_experience": "Years of Experience",
+      "stat_rating": "People per Cleaning",
+      "stat_free": "Free",
+      "stat_estimates": "Estimates",
+      "trust_residential": "Homes &amp; Apartments",
+      "trust_gutters": "Kitchens, Bathrooms, Dusting &amp; Floors",
+      "trust_repairs": "Regular, Deep &amp; Move-Out Cleaning",
+      "trust_rated": "Available Monday &ndash; Friday",
+      "est_title": "Request a Free Estimate",
+      "est_lead": "Fill out the form below and we will contact you promptly with a free estimate.",
+      "lbl_name": "Your Name *",
+      "lbl_phone": "Phone Number *",
+      "lbl_city": "City or Address",
+      "lbl_service": "Service Needed *",
+      "lbl_details": "Service Details",
+      "ph_name": "John Doe",
+      "ph_phone": "(224) 000-0000",
+      "ph_city": "e.g. Chicago, IL",
+      "ph_details": "Tell us what you need, how many bedrooms and bathrooms your home or apartment has, or when you'd like to start...",
+      "opt_service_placeholder": "Select a Service",
+      "opt_regular": "Regular Cleaning",
+      "opt_deep": "Deep Cleaning",
+      "opt_move": "Move-In / Move-Out Cleaning",
+      "opt_multiple": "Multiple Services / Not Sure",
+      "btn_submit_request": "Submit Free Estimate Request",
+      "form_note": "No obligation. We respect your privacy and never sell your information.",
+      "callbox_title": "Prefer to Speak Right Now?",
+      "callbox_lead": "Give us a call to ask questions or schedule your estimate right away.",
+      "callbox_hours_title": "Hours of Operation",
+      "callbox_hours_week": "Monday &ndash; Friday: 8:00 AM &ndash; 6:00 PM",
+      "callbox_hours_sun": "Saturday &amp; Sunday: Closed",
+      "callbox_areas_title": "Service Areas",
+      "callbox_areas_desc": "Based in Chicago, IL &bull; Serving Chicago, Evanston, Highland Park, Glenview, and surrounding North Shore and Chicagoland areas.",
+      "footer_desc": "Professional home and apartment cleaning in Chicago and the northern suburbs. Regular, deep, and move-in / move-out cleaning.",
+      "footer_services_title": "Services",
+      "footer_nav_title": "Navigation",
+      "footer_contact_title": "Contact",
+      "footer_hours": "Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM",
+      "footer_copyright": "&copy; 2026 Aztec Maids Service LLC. All rights reserved.",
+      "footer_serving": "Based in Chicago &bull; Serving Chicago, Evanston, Highland Park, Glenview &amp; the North Shore",
+      "footer_area": "Chicago, IL &amp; the North Shore",
+      "sticky_call": "Call Us",
+      "sticky_estimate": "Free Estimate",
+      "gallery_title": "Gallery",
+      "msg_submitting": "Submitting Request...",
+      "msg_success_title": "Estimate Request Received!",
+      "msg_success_desc": "Thank you! We will review your details and call you shortly with your free estimate.",
+      "msg_need_call": "Need immediate service? Call",
+      "msg_error_call": "Submission error. Please call (224) 252-8034 directly.",
+      "nav_areas": "Areas",
+      "hero_feat_4": "Monday &ndash; Friday: 8 AM &ndash; 6 PM",
+      "how_title": "How It Works",
+      "how_lead": "Three simple steps to a clean home.",
+      "how1_title": "Contact Us",
+      "how1_desc": "Call us, send a text, or fill out the form with details about your home or apartment.",
+      "how2_title": "Get Your Estimate",
+      "how2_desc": "We review the details and give you a free estimate, with clear pricing from the start.",
+      "how3_title": "We Schedule Your Cleaning",
+      "how3_desc": "We pick the day and time that works best for you, Monday through Friday.",
+      "areas_title": "Service Areas",
+      "areas_lead": "We serve Chicago and the northern suburbs.",
+      "areas_more": "Plus surrounding North Shore and Chicagoland areas.",
+      "areas_note": "Don't see your city? Give us a call and we'll gladly confirm whether we reach your area.",
+      "faq_title": "Frequently Asked Questions",
+      "faq_lead": "Quick answers to the most common questions.",
+      "lbl_beds": "Bedrooms",
+      "lbl_baths": "Bathrooms",
+      "lbl_contact": "How should we contact you?",
+      "opt_beds_ph": "Select",
+      "opt_studio": "Studio",
+      "opt_5plus": "5 or more",
+      "opt_baths_ph": "Select",
+      "opt_4plus": "4 or more",
+      "opt_contact_ph": "Select",
+      "opt_contact_call": "Phone call",
+      "opt_contact_text": "Text message",
+      "phone_label_1": "Main phone",
+      "phone_label_2": "Second phone",
+      "btn_text_us": "Send a Text",
+      "btn_facebook": "Follow Us on Facebook",
+      "sticky_text": "Text",
+      "lbl_freq": "Frequency",
+      "opt_freq_ph": "Select",
+      "opt_freq_once": "One time",
+      "opt_freq_weekly": "Weekly",
+      "opt_freq_biweekly": "Every two weeks",
+      "opt_freq_monthly": "Monthly",
+      "opt_freq_unsure": "Not sure",
+      "faq1_q": "How much does a cleaning cost?",
+      "faq1_a": "Pricing depends on the size of your home or apartment and the type of cleaning. Request your free estimate by phone, text, or the form and we'll give you clear pricing from the start.",
+      "faq2_q": "What does the cleaning include?",
+      "faq2_a": "Kitchens, bathrooms, dusting, vacuuming, and floors. In kitchens we clean appliances on the outside and, depending on the package, the inside too.",
+      "faq3_q": "What's the difference between regular and deep cleaning?",
+      "faq3_a": "Regular cleaning keeps your home clean on a recurring basis. Deep cleaning is more thorough, top to bottom, and reaches the corners regular cleaning doesn't.",
+      "faq4_q": "How often can you clean my home?",
+      "faq4_a": "We adapt to your needs. We offer one-time, weekly, biweekly, or monthly service.",
+      "faq5_q": "How much experience do you have, and how many people come to my home?",
+      "faq5_a": "We have 3 years of experience in the area. To keep the service efficient, we assign a team of 2 people to every cleaning.",
+      "faq6_q": "Do I need to be home during the cleaning?",
+      "faq6_a": "It's not required that you be home during the service. If you prefer to be present, that's no problem at all.",
+      "faq7_q": "Can you clean if I have pets?",
+      "faq7_a": "Yes, we can work with pets in the home as long as they aren't dangerous or are supervised by their owners.",
+      "faq8_q": "What payment methods do you accept?",
+      "faq8_a": "We accept payment by Zelle or cash.",
+      "faq9_q": "What is your cancellation policy?",
+      "faq9_a": "We understand that unexpected things happen. If you need to cancel or reschedule, let us know at least 24 hours in advance at no charge. Cancellations outside that window have a $50 fee.",
+      "faq10_q": "What language do you communicate in?",
+      "faq10_a": "Our assistants handle communication with clients to take care of any detail. The cleaning team communicates in Spanish.",
+      "faq11_q": "Do you bring your own supplies and equipment?",
+      "faq11_a": "[TO CONFIRM: write the owner's answer here.]"
   }
 };
 
@@ -360,7 +320,6 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         if (mainNav.classList.contains('open')) {
           mainNav.classList.remove('open');
-          mobileToggle.setAttribute('aria-expanded', 'false');
         }
       });
     });
@@ -407,9 +366,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Auto-slide every 5.5 seconds
+    // Auto-slide every 5 seconds
     const startTimer = () => {
-      autoSlideTimer = setInterval(nextSlide, 5500);
+      autoSlideTimer = setInterval(nextSlide, 5000);
     };
 
     const resetTimer = () => {
@@ -420,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startTimer();
 
     // Pause on hover
-    const heroSection = document.querySelector('.hero-slider-wrap');
+    const heroSection = document.querySelector('.hero-slider-wrap') || document.querySelector('.hero-section');
     if (heroSection) {
       heroSection.addEventListener('mouseenter', () => clearInterval(autoSlideTimer));
       heroSection.addEventListener('mouseleave', startTimer);
@@ -448,14 +407,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 3. Form Submission Handling (Formspree / Web3Forms / Demo UX)
+  // 3. Web3Forms AJAX Submission UX
   const estimateForm = document.getElementById('estimateForm');
   if (estimateForm) {
     estimateForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = estimateForm.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
-      const activeLang = localStorage.getItem('aztec_lang') || 'es';
+      const activeLang = document.documentElement.lang === 'en' ? 'en' : 'es';
       const t = translations[activeLang] || translations.es;
 
       submitBtn.disabled = true;
@@ -463,21 +422,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const showSuccess = () => {
         estimateForm.innerHTML = `
-          <div style="text-align: center; padding: 40px 16px;">
-            <div style="width: 60px; height: 60px; background-color: #fef8eb; color: #d4a340; border: 2px solid #d4a340; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 18px;">
-              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <div style="text-align: center; padding: 36px 16px;">
+            <div style="width: 56px; height: 56px; background-color: #eef7fd; color: #4aa3e0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </div>
-            <h3 style="font-size: 1.45rem; color: #0c213d; margin-bottom: 10px;">${t.msg_success_title}</h3>
-            <p style="color: #475569; font-size: 1rem; max-width: 460px; margin: 0 auto 24px; line-height: 1.6;">
+            <h3 style="font-size: 1.4rem; margin-bottom: 8px;">${t.msg_success_title}</h3>
+            <p style="color: #475569; font-size: 1rem; max-width: 440px; margin: 0 auto 20px;">
               ${t.msg_success_desc}
             </p>
-            <div style="font-size: 0.95rem; color: #0f172a; font-weight: 700; background: #f8fafc; padding: 14px; border-radius: 8px; border: 1px solid #e2e8f0; display: inline-block;">
-              ${t.msg_need_call} <br>
-              <a href="tel:2242528034" style="color: #0c213d; text-decoration: underline; margin-right: 12px;">(224) 252-8034</a>
-              <a href="tel:2243052897" style="color: #0c213d; text-decoration: underline;">(224) 305-2897</a>
-            </div>
+            <p style="font-size: 0.95rem; color: #0a1f44; font-weight: 700;">
+              ${t.msg_need_call} <a href="tel:2242528034" style="color: #0a2a5e; text-decoration: underline;">(224) 252-8034</a>
+            </p>
           </div>
         `;
       };
@@ -485,11 +442,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const accessKeyInput = estimateForm.querySelector('input[name="access_key"]');
       const accessKey = accessKeyInput ? accessKeyInput.value.trim() : '';
 
+      // If user hasn't put in their Web3Forms key yet, simulate success for demo/testing
       if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
         setTimeout(showSuccess, 600);
         return;
       }
 
+      // If valid Web3Forms key is set, send via fetch
       try {
         const formData = new FormData(estimateForm);
         const response = await fetch('https://api.web3forms.com/submit', {
@@ -500,18 +459,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.success) {
           showSuccess();
         } else {
-          alert('Error: ' + (data.message || t.msg_error_call));
+          alert('Submission error: ' + (data.message || t.msg_error_call));
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalBtnText;
         }
       } catch (err) {
-        console.error('Submission error:', err);
+        console.error('Form submission error:', err);
         showSuccess();
       }
     });
   }
 
-  // 4. Gallery Lightbox Modal
+  // 4. Gallery Lightbox (gallery.html)
   const galleryItems = document.querySelectorAll('.gallery-photo-item');
   const lightboxModal = document.getElementById('lightboxModal');
   const lightboxImg = document.getElementById('lightboxImg');
@@ -619,18 +578,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    localStorage.setItem('aztec_lang', lang);
   }
 
   // Default to Spanish unless explicitly switched by user
-  const savedLang = localStorage.getItem('aztec_lang') || 'es';
+  // Saved choice wins; otherwise follow the browser's first preferred language
+  let savedLang = null;
+  try { savedLang = localStorage.getItem('aztec_lang'); } catch (err) {}
+  if (!savedLang) {
+    const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'es'];
+    savedLang = /^en/i.test(langs[0]) ? 'en' : 'es';
+  }
   applyLanguage(savedLang);
 
   if (langToggleBtn) {
     langToggleBtn.addEventListener('click', () => {
-      const current = localStorage.getItem('aztec_lang') || 'es';
-      const next = current === 'es' ? 'en' : 'es';
+      const next = document.documentElement.lang === 'en' ? 'es' : 'en';
       applyLanguage(next);
+      try { localStorage.setItem('aztec_lang', next); } catch (err) {}
     });
   }
 });

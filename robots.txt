@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kcuevas00.github.io/aztecmaids/sitemap.xml
+Sitemap: https://aztecmaids.com/sitemap.xml
