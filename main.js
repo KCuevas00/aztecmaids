@@ -149,7 +149,7 @@ const translations = {
       "faq10_q": "¿En qué idioma se comunican?",
       "faq10_a": "Nuestros asistentes se encargan de la comunicación con el cliente para atender cualquier detalle. El equipo de limpieza se comunica en español.",
       "faq11_q": "¿Traen sus propios productos y equipo?",
-      "faq11_a": "[POR CONFIRMAR: escribir aquí la respuesta del dueño.]",
+      "faq11_a": "Sí, traemos nuestro propio equipo y productos de limpieza estándar. Si usted prefiere que utilicemos algún producto o aspiradora en particular de su hogar, con gusto nos adaptamos.",
       "footer_credit": "Sitio web hecho por <a href=\"https://kevincuevas.com\" target=\"_blank\" rel=\"noopener noreferrer\">Kevin Cuevas</a>"
   },
   en: {
@@ -300,7 +300,7 @@ const translations = {
       "faq10_q": "What language do you communicate in?",
       "faq10_a": "Our assistants handle communication with clients to take care of any detail. The cleaning team communicates in Spanish.",
       "faq11_q": "Do you bring your own supplies and equipment?",
-      "faq11_a": "[TO CONFIRM: write the owner's answer here.]",
+      "faq11_a": "Yes, we bring our own equipment and standard cleaning supplies. If you prefer us to use specific products or a particular vacuum of your choice, we are happy to accommodate.",
       "footer_credit": "Website made by <a href=\"https://kevincuevas.com\" target=\"_blank\" rel=\"noopener noreferrer\">Kevin Cuevas</a>"
   }
 };
